@@ -1,6 +1,6 @@
 import React from "react";
 import { AdultNav } from "../../molecules";
-import title from "../../../Asset/movie-title.webp";
+// import title from "../../../Asset/movie-title.webp";
 
 
 export const HomeAdults = () => {

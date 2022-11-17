@@ -12,3 +12,6 @@ export * from "./KidsNav";
 export * from "./RegistrationNavbar";
 export * from "./RegistrationSection";
 export * from "./RegDetailSection";
+export * from "./MainLoginForm";
+export * from "./OtherLoginForm";
+

@@ -636,6 +636,91 @@ input:valid ~ .floating-label {
   position: absolute;
   margin-top: 0px;
 }
+/* Sign in Page */
+.signin-logo {
+  width: 130%;
+  margin: 20px 30px;
+}
+
+.signin-bg-container {
+  font: var(--font-family-sans);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.signin-bg {
+  background-color: rgba(0, 0, 0, .75);
+  width: 37vw;
+  padding: 60px 68px 40px;
+  border-radius: 4px;
+}
+.main-login{
+  margin-bottom: 30px;
+}
+.signin-h1 {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 28px;
+  /* font-weight: 500; */
+}
+
+.signin-input {
+  width: 100%;
+  background-color: #333;
+  color: #8c8c8c;
+  height: 50px;
+  padding: 10px 20px 10px;
+  margin-bottom: 10px;
+  border: 0;
+  border-radius: 4px;
+}
+
+.signin-input::placeholder {
+  color: #8c8c8c;
+  font-size: 16px;
+}
+
+.signin-cta {
+  width: 100%;
+  background-color: var(--btn-red);
+  border-radius: 4px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 24px 0 12px;
+  padding: 16px;
+}
+
+.rememberme-cont {
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+}
+
+.rememberme-cont a {
+  color: white;
+  text-decoration: none;
+}
+
+.rememberme-cont a:hover {
+  text-decoration: underline;
+}
+
+.rememberme {
+  margin-right: 8px;
+  font-size: 30px;
+}
+
+.rememberme:checked {
+  color: red;
+}
+.oder-login-opt{
+  display: flex;
+}
 @media screen and (max-width: 1200px) {
   .download-img {
     padding-left: 2.5rem;

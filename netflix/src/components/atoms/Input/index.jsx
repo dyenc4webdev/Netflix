@@ -22,6 +22,7 @@ export const Input = ({ label, onChange, type, className, placeholder }) => {
         <input
           id={label}
           type="password"
+          placeholder={placeholder}
           className={className}
           onChange={onChange}
         />

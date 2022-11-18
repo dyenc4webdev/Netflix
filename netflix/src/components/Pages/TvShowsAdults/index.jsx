@@ -1,9 +1,22 @@
-import React from "react";
+import { CategorySlide } from "../../organisms";
+import { MovieScreen } from "../../organisms/MovieScreen";
+import { PageTemplate } from "../../templates";
+import "./index.css";
 
 export const TvShowsAdults = () => {
-    return (
+  return (
+    <PageTemplate>
+      <div className="main-view">
         <div>
-            <h1>Tv shows adults</h1>
+          {<MovieScreen />}
+          <div className="SlideWrapper">
+            {<CategorySlide />}
+            {<CategorySlide />}
+            {<CategorySlide />}
+            {<CategorySlide />}
+          </div>
         </div>
-    );
+      </div>
+    </PageTemplate>
+  );
 };

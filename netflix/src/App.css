@@ -1,4 +1,6 @@
 :root {
+  --clr-white: #fff;
+  --clr-black: #212529;
   --btn-red: #e50914;
   --btn-red-2: #e40914;
   --btn-white: #fffff7;
@@ -39,7 +41,47 @@ p {
   margin: 0;
   padding: 0;
 }
-
+button {
+  border: 0;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.d-flex {
+  display: flex;
+}
+.justify-space-between {
+  justify-content: space-between;
+}
+.justify-space-around {
+  justify-content: space-around;
+}
+.justify-center {
+  justify-content: center;
+}
+.align-center {
+  align-items: center;
+}
+.flex-direction {
+  flex-direction: column;
+}
+.text-bold {
+  font-weight: bold;
+}
+.text-white {
+  color: var(--clr-white);
+}
+.bg-black {
+  background-color: var(--clr-black);
+}
+.bg-white {
+  background-color: var(--clr-white);
+}
+.bg-grey {
+  background-color: var(--register-btn);
+}
 /* landing page */
 
 .landing-nav-btn {

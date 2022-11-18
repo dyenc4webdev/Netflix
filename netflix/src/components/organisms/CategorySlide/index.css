@@ -1,0 +1,34 @@
+.category {
+  width: 100%;
+  margin-bottom: 10px;
+}
+a {
+  text-decoration: none;
+}
+.wrapper {
+  position: relative;
+}
+.slider {
+  width: max-content;
+  transition: transform 0.85s;
+}
+.m-r-40 {
+  margin-left: 40px;
+}
+.slider-icon {
+  position: absolute;
+  background-color: rgba(22, 22, 22, 0.5);
+  top: 0;
+  bottom: 0;
+  width: 30px;
+  height: 100%;
+  z-index: 99;
+  cursor: pointer;
+}
+.left {
+  left: 0;
+}
+.right {
+  right: 0;
+  z-index: 99;
+}

@@ -11,9 +11,9 @@ import logo from "../../../assets/Logonetflix.png";
 
 
 const signinMainStyle ={
-    backgroundImage:`linear-gradient(to bottom, #00000070 , #00000070),url(${signinBg})`,
+    backgroundImage:`linear-gradient(to bottom, #00000090 , #00000070),url(${signinBg})`,
     backgroundCover: 'cover'
-    
+
 }
 
 export const SignIn = () => {

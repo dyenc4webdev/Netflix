@@ -1,376 +1,57 @@
 import React from "react";
-import { AdultNav } from "../../molecules";
-import title from "../../../assets/movie-title2.webp";
-import {
-  FaAngleLeft,
-  FaAngleRight,
-  FaChevronCircleDown,
-  FaInfoCircle,
-  FaPlay,
-  FaPlayCircle,
-  FaPlusCircle,
-  FaRegThumbsUp,
-} from "react-icons/fa";
-import CardImg from "../../../assets/card-img.jpg";
-import CardImg2 from "../../../assets/card-img2.jpg";
-import CardImg3 from "../../../assets/card-img3.jpg";
-import "./home.css";
+import { FaSearch, FaBell, FaCaretDown } from "react-icons/fa";
+import logo from "../../../assets/logo.svg";
+import Profile from "../../../assets/profile1.png";
+import "./adultnav.css";
 
-export const HomeAdults = () => {
+export const AdultNav = () => {
   return (
-    <>
-      <div>
+    <nav
+      style={{
+        display: "flex",
+        justifyContent: "space-between",
+        alignItems: "center",
+        backgroundColor: "rgb(20, 20, 20)",
+        background: "transparent",
+        color: "white",
+        padding: "0 50px",
+        height: "70px",
+        position: "relative",
+        zIndex: "2",
+        fontSize: "0.85rem",
+        backgroundImage:
+          "linear-gradient(180deg,rgba(0,0,0,.7) 10%,transparent)",
+        lineHeight: "1.2", cursor: "pointer"
+      }}
+    >
+      <div style={{ display: "flex", alignItems: "center", gap: "32px" }}>
         <img
           style={{
-            position: "absolute",
-            backgroundPosition: "center",
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
+            width: "100px",
+            backgroundImage:
+              "linear-gradient(180deg,rgba(0,0,0,.7) 10%,transparent)",
           }}
-          src="https://occ-0-1168-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABcr90E92rlkSBcKLFCJGwko1KgIeEoHJBczS1JgUrz0mMwstkOuTpZ-FvmJ4TT26UWDgo4-FJg9i-rDL6elH1WPeBjsn3NMOkCyB.webp?r=496"
-          alt="hero-banner"
+          src={logo}
+          alt="logo"
         />
-        <AdultNav />
-        <div
-          style={{
-            position: "absolute",
-            width: "50%",
-            padding: "0 50px",
-            marginTop: "64px",
-          }}
-        >
-          <img style={{ width: "85%" }} src={title} alt="hero-title" />
-          <p
-            style={{
-              textShadow: "2px 2px 4px rgb(0 0 0 / 45%)",
-              color: "white",
-              width: "85%",
-            }}
-          >
-            Dark secrets and mysterious connections among the passengers of the Kerberos come to light when they encounter a missing ship, the Prometheus.
-          </p>
-          <div style={{ display: "flex", justifyContent: "space-between", marginTop: "32px" }}>
-            <div style={{ display: "flex", gap: "16px" }}>
-              <button
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "8px",
-                  padding: "10px 24px",
-                  fontWeight: "bold",
-                  fontSize: "1rem",
-                  borderRadius: "5px",
-                  border: "none",
-                }}
-              >
-                <FaPlay /> Play
-              </button>
-              <button
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "8px",
-                  padding: "10px 24px",
-                  fontWeight: "bold",
-                  fontSize: "1rem",
-                  borderRadius: "5px",
-                  backgroundColor: "rgba(109, 109, 110, 0.7)",
-                  color: "white",
-                  border: "none",
-                }}
-              >
-                <FaInfoCircle /> More Info
-              </button>
-            </div>
-            <p
-              style={{
-                color: "white",
-                position: "absolute",
-                right: "-630px",
-                backgroundColor: "rgba(51,51,51,.6)",
-                width: "70px",
-                padding: "5px",
-                border: "3px #dcdcdc",
-                borderLeftStyle: "solid",
-              }}
-            >
-              18+
-            </p>
-          </div>
+        <div style={{ display: "flex", gap: "16px" }}>
+          <span style={{ fontWeight: "bold" }}>Home</span>
+          <span className="inactive">TV Shows</span>
+          <span className="inactive">Movies</span>
+          <span className="inactive">New & Popular</span>
+          <span className="inactive">My List</span>
+          <span className="inactive">Browse by Languages</span>
         </div>
       </div>
-      <div style={{ width: "100%", paddingLeft: "50px", height: "25vh" }}>
-        <div
-          style={{ width: "100%", position: "relative", marginTop: "450px" }}
-        >
-          <p className="banner-text" style={{ color: "white", marginTop: "50px", fontSize: "1.1rem", marginBottom: "16px", }}>
-            Award-Winning TV Dramas
-          </p>
-          <div style={{}}>
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                overflow: "hidden",
-                gap: "8px",
-              }}
-            >
-              <div style={{}}>
-                <img
-                  style={{
-                    backgroundPosition: "center",
-                    backgroundRepeat: "no-repeat",
-                    borderRadius: "5px",
-                    width: "100%",
-                  }}
-                  src={CardImg3}
-                  alt=""
-                />
-                <p
-                  style={{
-                    color: "white",
-                    position: "relative",
-                    top: "-50px",
-                    marginLeft: "30px",
-                  }}
-                >
-                  Hello
-                </p>
-              </div>
-              <div style={{}}>
-                <img
-                  style={{
-                    backgroundPosition: "center",
-                    backgroundRepeat: "no-repeat",
-                    borderRadius: "5px",
-                    width: "100%",
-                  }}
-                  src={CardImg}
-                  alt=""
-                />
-              </div>
-              <div style={{}}>
-                <img
-                  style={{
-                    backgroundPosition: "center",
-                    backgroundRepeat: "no-repeat",
-                    borderRadius: "5px",
-                    width: "100%",
-                  }}
-                  src={CardImg2}
-                  alt=""
-                />
-              </div>
-              <div style={{}}>
-                <img
-                  style={{
-                    backgroundPosition: "center",
-                    backgroundRepeat: "no-repeat",
-                    borderRadius: "5px",
-                    width: "100%",
-                  }}
-                  src={CardImg3}
-                  alt=""
-                />
-              </div>
-              <div style={{}}>
-                <img
-                  style={{
-                    backgroundPosition: "center",
-                    backgroundRepeat: "no-repeat",
-                    borderRadius: "5px",
-                    width: "100%",
-                  }}
-                  src={CardImg}
-                  alt=""
-                />
-              </div>
-              <div style={{}}>
-                <img
-                  style={{
-                    backgroundPosition: "center",
-                    backgroundRepeat: "no-repeat",
-                    borderRadius: "5px",
-                    width: "100%",
-                  }}
-                  src={CardImg}
-                  alt=""
-                />
-              </div>
-              <div style={{Right: "-200px"}}>
-                <img
-                  style={{
-                    backgroundPosition: "center",
-                    backgroundRepeat: "no-repeat",
-                    borderRadius: "5px",
-                    width: "100%",
-                  }}
-                  src={CardImg}
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          style={{
-            position: "relative",
-            color: "white",
-            display: "flex",
-            justifyContent: "space-between",
-            fontSize: "3rem",
-            marginTop: "-150px",
-          }}
-        >
-          <FaAngleLeft />
-          <FaAngleRight />
-        </div>
-        <div style={{ width: "100%", position: "relative", marginTop: "30px" }}>
-          <p style={{ color: "white", marginTop: "100px", fontSize: "1.2rem" }}>
-            Bingeworthy TvShows
-          </p>
-          <div style={{ width: "fit-content" }}>
-            <div
-              style={{
-                display: "grid",
-                overflow: "hidden",
-                gap: "8px",
-                gridRows: "1",
-                gridTemplateColumns: "1fr 1fr 1fr 1fr 1fr",
-              }}
-            >
-              <div style={{}}>
-                <div style={{ display: "flex" }}>
-                  <img
-                    style={{
-                      backgroundPosition: "center",
-                      backgroundRepeat: "no-repeat",
-                      borderRadius: "5px",
-                      width: "100%",
-                    }}
-                    src={CardImg3}
-                    alt=""
-                  />
-                </div>
-                <div
-                  style={{
-                    color: "white",
-                    padding: "10px",
-                    backgroundColor: "transparent",
-                    marginTop: "10px",
-                  }}
-                >
-                  <div
-                    style={{ display: "flex", justifyContent: "space-between" }}
-                  >
-                    <span
-                      style={{
-                        display: "flex",
-                        gap: "8px",
-                        fontSize: "1.5rem",
-                      }}
-                    >
-                      <FaPlayCircle />
-                      <FaPlusCircle />
-                      <FaRegThumbsUp />
-                    </span>
-                    <div style={{ fontSize: "1.5rem" }}>
-                      <FaChevronCircleDown />
-                    </div>
-                  </div>
-                  <div style={{ display: "flex", gap: "2px" }}>
-                    <span
-                      style={{
-                        color: "green",
-                        fontWeight: "bold",
-                        fontSize: "1rem",
-                      }}
-                    >
-                      90% Match
-                    </span>
-                    <span style={{ border: "1px solid white" }}>18+</span>
-                    <span>5 Seasons</span>
-                    <span style={{ border: "1px solid white" }}>HD</span>
-                  </div>
-                  <div
-                    style={{
-                      display: "flex",
-                      alignItems: "center",
-                      gap: "8px",
-                    }}
-                  >
-                    <span>Soapy</span>
-                    <span>Suspenseful</span>
-                    <span>Teens</span>
-                  </div>
-                </div>
-              </div>
-              <div style={{}}>
-                <img
-                  style={{
-                    backgroundPosition: "center",
-                    backgroundRepeat: "no-repeat",
-                    borderRadius: "5px",
-                    width: "100%",
-                  }}
-                  src={CardImg}
-                  alt=""
-                />
-              </div>
-              <div style={{}}>
-                <img
-                  style={{
-                    backgroundPosition: "center",
-                    backgroundRepeat: "no-repeat",
-                    borderRadius: "5px",
-                    width: "100%",
-                  }}
-                  src={CardImg2}
-                  alt=""
-                />
-              </div>
-              <div style={{}}>
-                <img
-                  style={{
-                    backgroundPosition: "center",
-                    backgroundRepeat: "no-repeat",
-                    borderRadius: "5px",
-                    width: "100%",
-                  }}
-                  src={CardImg3}
-                  alt=""
-                />
-              </div>
-              <div style={{}}>
-                <img
-                  style={{
-                    backgroundPosition: "center",
-                    backgroundRepeat: "no-repeat",
-                    borderRadius: "5px",
-                    width: "100%",
-                  }}
-                  src={CardImg}
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          style={{
-            position: "relative",
-            color: "white",
-            display: "flex",
-            justifyContent: "space-between",
-            fontSize: "3rem",
-            alignItems: "center",
-            marginTop: "-200px",
-          }}
-        >
-          <FaAngleLeft />
-          <FaAngleRight />
+      <div style={{ display: "flex", gap: "16px", alignItems: "center" }}>
+        <FaSearch style={{ fontSize: "1.2rem" }} />
+        <span>Kids</span>
+        <FaBell style={{ fontSize: "1.2rem" }} />
+        <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+          <img src={Profile} style={{width: "30px"}} />
+          <FaCaretDown style={{ fontSize: "1.2rem" }} />
         </div>
       </div>
-    </>
+    </nav>
   );
 };

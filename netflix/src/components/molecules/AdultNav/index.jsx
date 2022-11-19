@@ -1,7 +1,8 @@
 import React from "react";
 import { FaSearch, FaBell, FaCaretDown } from "react-icons/fa";
 import logo from "../../../assets/logo.svg";
-import Profile from "../../../assets/profile1.png"
+import Profile from "../../../assets/profile1.png";
+import "./adultnav.css";
 
 export const AdultNav = () => {
   return (
@@ -17,13 +18,13 @@ export const AdultNav = () => {
         height: "70px",
         position: "relative",
         zIndex: "2",
-        fontSize: "0.9rem",
+        fontSize: "0.85rem",
         backgroundImage:
           "linear-gradient(180deg,rgba(0,0,0,.7) 10%,transparent)",
-        lineHeight: "1.2",
+        lineHeight: "1.2", cursor: "pointer"
       }}
     >
-      <div style={{ display: "flex", alignItems: "center", gap: "30px" }}>
+      <div style={{ display: "flex", alignItems: "center", gap: "32px" }}>
         <img
           style={{
             width: "100px",
@@ -35,11 +36,11 @@ export const AdultNav = () => {
         />
         <div style={{ display: "flex", gap: "16px" }}>
           <span style={{ fontWeight: "bold" }}>Home</span>
-          <span>TV Shows</span>
-          <span>Movies</span>
-          <span>New & Popular</span>
-          <span>My List</span>
-          <span>Browse by Languages</span>
+          <span className="inactive">TV Shows</span>
+          <span className="inactive">Movies</span>
+          <span className="inactive">New & Popular</span>
+          <span className="inactive">My List</span>
+          <span className="inactive">Browse by Languages</span>
         </div>
       </div>
       <div style={{ display: "flex", gap: "16px", alignItems: "center" }}>
